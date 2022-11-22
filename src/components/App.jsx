@@ -12,7 +12,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Section title="Please leave feedback" />
+      <Section />
     </div>
   );
 };
