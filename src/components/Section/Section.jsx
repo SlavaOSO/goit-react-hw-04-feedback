@@ -27,7 +27,8 @@ export const Section = () => {
                 break;
         }
      };
-    const countTotalFeedback = () => [goodS + neutralS + badS].reduce((previousValue, currentValue) => previousValue + currentValue + 0);
+    // const countTotalFeedback = () => [goodS + neutralS + badS].reduce((previousValue, currentValue) => previousValue + currentValue + 0);
+    const countTotalFeedback = () => { return goodS + neutralS + badS };
     const countPositiveFeedbackPercentage = () =>  Math.round((goodS / countTotalFeedback()*100)) + "%" ;
     const options = ['good', 'neutral', 'bad'];
 
